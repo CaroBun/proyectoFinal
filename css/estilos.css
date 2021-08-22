@@ -12,34 +12,9 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 12px;
 } 
-.contenedorBody {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
 .bordeLogo {
-  margin-top: 25px;
+  margin-top: 50px;
   padding-left: 30px;
-}
-header {
-  margin-bottom: 100px;
-  border-bottom: solid 24px #D4D4D4;
-  width: 100%;
-  height: 200px;
-}
-.gradienteLineal {
-  background-image:linear-gradient(to bottom right, #048BA2, #04BBC6, #04CDD1);
-}
-nav {
-  text-align: center;
-  padding-right: 130px;
-  padding-top: 100px;
-}
-nav ul li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  font-size: 1.125em;
 }
 .linkPosition {
   display: flex;
@@ -53,24 +28,12 @@ nav ul li a {
 .linksRedes li {
   padding: 5px;
 }
-
-
-
-
-.btn-menu {
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 70px;
-  padding-top: 145px;
+.subMenu {
+  background-color: #e7e6e6;
 }
-.btn-menu:focus {
-
+.menu {
+  background-color: #D4D4D4;
 }
-
-
-
-
 .marcadorH3 {
   color: white;
   font-size: 0.9375em;
@@ -85,11 +48,6 @@ h4 {
 }
 .sinSubrayado {
   text-decoration: none;
-}
-.cajaTexto {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 .titulosPrincipales {
   font-style: normal ;
@@ -136,9 +94,6 @@ footer ul li a {
   position: relative;
   top: -35px;
 }
-.nombreDesarrollo {
-font-weight: bold;
-}
 footer ul li a:hover {
   background-color: #6BE0E2;
   transition: .4s;
@@ -149,6 +104,10 @@ footer ul li a:hover {
 footer p span {
   cursor: pointer;
 }
+.nombreDesarrollo {
+  font-weight: bold;
+}
+  
 
 
 /* Estilos HOME */
@@ -231,6 +190,7 @@ color: white;
 /* Estilos VIANDAS */
 
 .titleCarousel {
+  display: inline-block;
   font-size: 1.2em;
   color: white;
   padding: 2px;
@@ -244,13 +204,9 @@ color: white;
 
 /* Estilos RABAS */
 
-.videoRabas {
-  padding-bottom: 30px;
-}
 main video {
   max-width: 100%;
   height: auto;
-  padding: 0 20px;
 }
 .titleVideo {
   display: inline-block;
@@ -265,10 +221,6 @@ main video {
 
 /* Estilos RECETIPS */
 
-.contenedorRecetips {
-  width: 900px;
-  padding-bottom: 20px;
-}
 .articulosRecetips {
   display: flex;
   flex-direction: row;
@@ -316,17 +268,6 @@ main iframe {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.marginLabel {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.marginInput {
-  margin-top: 5px ;
-  margin-bottom: 20px;
-}
-.centrado {
-  text-align: center;
-  }
 ul li {
   list-style-type: none;
 }
@@ -350,35 +291,37 @@ ul li {
   .linksRedes li {
     padding: 60px 5px;
   }
-  nav ul li a {
-    display: none; 
-    }
-    .linkPosition {
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 40px;
-   }
-    .linksRedes {
-      display: inline-flex;
-      padding-right: 20px;
-      position: absolute;
-      top: -40px;
-    }
-    .linksRedes li {
-      padding: 60px 5px;
-    }
-    main img {
-      max-width: 100%;
-      height: auto;
-    }
-    .btn-menu {
-      cursor: pointer;
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 70px;
-      padding-top: 145px;
-    }
-    
+  header {
+    margin-bottom: 100px;
+    border-bottom: solid 24px #D4D4D4;
+    width: 100%;
+    height: 200px;
+  }
+  .gradienteLineal {
+    background-image:linear-gradient(to bottom right, #048BA2, #04BBC6, #04CDD1);
+  }
+  nav {
+  display: none;
+  }
+  .linkPosition {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  .linksRedes {
+    display: inline-flex;
+    padding-right: 20px;
+    position: absolute;
+    top: -40px;
+  }
+  .linksRedes li {
+    padding: 60px 5px;
+  }
+  main img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 /* DESKTOP AND LAPTOPS */
@@ -391,26 +334,17 @@ ul li {
     margin-left: 60px;
     margin-top: 25px;
   }
-  .linksRedes {
-    display: inline-flex;
-    padding-right: 80px;
-    position: absolute;
-    margin-top: 40px;
+  header {
+    margin-bottom: 100px;
+    border-bottom: solid 24px #D4D4D4;
+    width: 100%;
+    height: 200px;
   }
-  .btn-menu {
-    display: none;
+  .gradienteLineal {
+    background-image:linear-gradient(to bottom right, #048BA2, #04BBC6, #04CDD1);
   }
-  main img {
-    max-width: 100%;
-    height: auto;
-  }
-  .cajaTexto {
-    max-width: 60%;
-    margin: 0 auto;
-    text-align: left;
-  }
-  .imgCenter {
-    text-align: center;
+  nav {
+  background-color: #D4D4D4;
   }
   nav ul li a {
     font-weight: bold;
@@ -432,44 +366,25 @@ ul li {
   }
   .linksRedes {
     display: inline-flex;
-    padding-right: 20px;
+    padding-right: 80px;
     position: absolute;
     top: -40px;
   }
   .linksRedes li {
     padding: 60px 5px;
   }
-  .menuPrincipal {
-    display: inline-block;
-    justify-content: space-around;
-    padding: 0 40px;
+  main img {
+    max-width: 100%;
+    height: auto;
   }
-  .espacioSubmenu{
-    padding-top: 5px;
-  }
-  .submenu {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    width: 100px;
+  .imgCenter {
     text-align: center;
-  }
-  .submenu li a {
-    font-weight: bold;
-    font-size: 0.875em;
-  }
-  nav ul li:hover .submenu {
-    display: block;
-  }
-  .posicionNav {
-    position: relative;
-    top: -93px;
-    margin-right: -300px;
   }
   main video {
     max-width: 100%;
     height: auto;
   }
+
   }
 
 
